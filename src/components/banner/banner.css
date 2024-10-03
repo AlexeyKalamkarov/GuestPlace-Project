@@ -1,5 +1,7 @@
-.banner img {
+.banner {
   position: relative;
+}
+.banner img {
   width: 100%;
   height: 650px;
   -o-object-fit: cover;
@@ -8,13 +10,17 @@
 }
 .banner .banner-content {
   position: absolute;
-  top: 30%;
+  top: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
-.banner .banner-content h1 {
+.banner .banner-content .banner-content-text h1 {
   font-size: 3rem;
   color: #fff;
 }
-.banner .banner-content p {
+.banner .banner-content .banner-content-text p {
   font-size: 1rem;
   color: #000;
 }/*# sourceMappingURL=banner.css.map */
