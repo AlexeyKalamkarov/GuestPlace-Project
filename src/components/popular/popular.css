@@ -1,0 +1,29 @@
+.cards-popular {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 30px;
+}
+.cards-popular .popular-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.cards-popular .popular-card .popular-card-star {
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+}
+.cards-popular .popular-card .popular-card-place {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.cards-popular .popular-card .popular-card-place .map-text {
+  display: flex;
+  flex-direction: column;
+}
+.cards-popular .popular-card .popular-card-place .map-text p {
+  font-size: 0.875rem;
+}/*# sourceMappingURL=popular.css.map */
