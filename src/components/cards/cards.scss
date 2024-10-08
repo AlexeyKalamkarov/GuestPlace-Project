@@ -41,3 +41,8 @@
         }
     }
 }
+@media screen and (min-width:769px) and (max-width:1024px) {
+    .cardsCategory .cardsCategory-content{
+      grid-template-columns: repeat(1,1fr);
+    }
+  }

@@ -9,6 +9,9 @@
   flex-direction: column;
   gap: 10px;
 }
+.cards-popular .popular-card .popular-card-img img {
+  border-radius: 8px;
+}
 .cards-popular .popular-card .popular-card-star {
   display: flex;
   flex-direction: row;
@@ -26,4 +29,33 @@
 }
 .cards-popular .popular-card .popular-card-place .map-text p {
   font-size: 0.875rem;
+}
+.cards-popular .popular-card .popular-card-button {
+  display: flex;
+  justify-content: center;
+}
+.cards-popular .popular-card .popular-card-button .btn-popular {
+  padding: 12px 19px;
+  border: 1px solid #0066CC;
+  border-radius: 50px;
+  color: #0066CC;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  font-family: "Raleway";
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.popular-card-text-content {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .cards-popular {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
 }/*# sourceMappingURL=popular.css.map */

@@ -5,31 +5,36 @@ import {PopularMean} from '../../helpers/popularhelpers';
 const Popular = () => {
     const PopularItem = PopularMean.map(cardPopular =>
         <div className="popular-card" key={cardPopular.id}>
-        <div className="popular-card-img">
-            <img src={cardPopular.img} alt="" />
-        </div>
-        <div className="popular-card-text">
-            <p>{cardPopular.title}</p>
-        </div>
-        <div className="popular-card-star">
-            <img src={Star} alt="" />
-            <img src={Star} alt="" />
-            <img src={Star} alt="" />
-            <img src={Star} alt="" />
-            <img src={Star} alt="" />
-        </div>
-        <div className="popular-card-place">
-            <div className="map-icon">
-                <img src={Map} alt="" />
+            <div className="popular-card-img">
+                <img src={cardPopular.img} alt="" />
             </div>
-            <div className="map-text">
-                <p>{cardPopular.place}</p>
-                <p>{cardPopular.time}</p>
+            <div className="popular-card-text-content">
+                <div className="popular-card-text">
+                    <p>{cardPopular.title}</p>
+                </div>
+                <div className="popular-card-star">
+                    <img src={Star} alt="" />
+                    <img src={Star} alt="" />
+                    <img src={Star} alt="" />
+                    <img src={Star} alt="" />
+                    <img src={Star} alt="" />
+                </div>
+                <div className="popular-card-place">
+                    <div className="map-icon">
+                        <img src={Map} alt="" />
+                    </div>
+                    <div className="map-text">
+                        <p>{cardPopular.place}</p>
+                        <p>{cardPopular.time}</p>
+                    </div>
+                </div>
+                <div className="">
+                    <p>35/100/150</p>
+                </div>
             </div>
-        </div>
-        <div className="">
-            <p>35/100/150</p>
-        </div>
+            <div className="popular-card-button">
+                <button className="btn-popular">Подробнее</button>
+            </div>
     </div>
 
 
